@@ -1,0 +1,138 @@
+/* Reset basic styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+/* Horizontal line styling */
+.horizontal-line {
+    height: 2px;                  /* Set the height of the line */
+    background-color: black;      /* Set the color of the line */
+    width: 100%;                  /* Set the width of the line */
+    margin: 20px 0;               /* Add vertical margin */
+}
+
+/* Sidebar styling */
+.sidebar {
+    position: relative;           /* Ensure positioning for contained elements */
+    padding: 1rem;               /* Add padding around the sidebar */
+}
+
+/* Button container aligned vertically at the top-left corner */
+.btnn-container {
+    display: flex;
+    flex-direction: column;       /* Stack buttons vertically */
+    align-items: flex-start;      /* Align to the left */
+    gap: 1rem;                    /* Space between buttons */
+    position: absolute;           /* Enable precise positioning */
+    top: 100px;                    /* Position below the heading */
+    left: 1rem;                   /* Align container to the left */
+}
+
+/* Button styling */
+.btnn {
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem 2rem;          /* Adjust padding for balance */
+    width: 12rem;                /* Button width */
+    border-radius: 0.5rem;       /* Rounded corners */
+    border: rgb(53, 53, 53) 0.1rem solid; /* Border styling */
+    font-size: 1rem;             /* Text size */
+}
+
+/* Button container aligned vertically at the top-right corner */
+.btn1-container {
+    display: flex;
+    flex-direction: column;       /* Stack buttons vertically */
+    align-items: flex-start;      /* Align to the left */
+    gap: 1rem;                    /* Space between buttons */
+    position: absolute;           /* Enable precise positioning */
+    top: 100px;                    /* Position below the heading */
+    right: 1rem;                  /* Align container to the right */
+}
+
+/* Button styling for second container */
+.btn1 {
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem 2rem;          /* Adjust padding for balance */
+    width: 12rem;                /* Button width */
+    border-radius: 0.5rem;       /* Rounded corners */
+    border: rgb(53, 53, 53) 0.1rem solid; /* Border styling */
+    font-size: 1rem;    
+}
+/* General hover effects for all buttons */
+.btnn-color-2:hover,
+.btnn-color-3:hover,
+.btn1-color-4:hover,
+.btn1-color-5:hover {
+    cursor: pointer;                /* Change cursor on hover */
+    background: rgb(53, 53, 53);   /* Background color on hover */
+    color: white;                  /* Text color on hover */
+    border: rgb(255, 255, 255) 0.1rem solid; /* Border color on hover */
+}
+
+/* Button 2 base styles */
+.btnn-color-2 {
+    background: none;              /* No background */
+}
+
+/* Button 3 base styles */
+.btnn-color-3 {
+    background: none;              /* No background */
+}
+
+/* Button 4 base styles */
+.btn1-color-4 {
+    background: none;              /* No background */
+}
+
+/* Button 5 base styles */
+.btn1-color-5 {
+    background: none;              /* No background */
+}
+
+/* Optional: If you want to explicitly ensure the same styles for btn1 buttons when not hovered */
+.btn1-color-4,
+.btn1-color-5 {
+    background: none;              /* No background */
+}
+
+
+
+
+/* Main content styling */
+main {
+    margin: 0;                   /* Remove default margin */
+    height: 100vh;               /* Full height of the viewport */
+    display: flex;               /* Use flexbox */
+    justify-content: center;      /* Center horizontally */
+    align-items: flex-start;     /* Align items at the top */
+    margin-top: 20px;            /* Add space from the top */
+}
+
+/* Search bar styling */
+.search-bar {
+    display: flex;               /* Use flexbox for alignment */
+    align-items: center;         /* Center items vertically */
+    margin-top: 20px;           /* Space from the top */
+}
+
+.search-bar input {
+    width: 300px;               /* Width of the input field */
+    padding: 10px;              /* Padding inside the input field */
+    font-size: 16px;            /* Font size for the input text */
+    border: 1px solid #ccc;     /* Border for the input field */
+    border-radius: 4px;         /* Rounded corners for the input field */
+}
+
+.search-bar button {
+    padding: 10px 20px;         /* Padding inside the button */
+    margin-left: 10px;          /* Space between input and button */
+    background-color: blue;     /* Button background color */
+    color: white;                /* Button text color */
+    border: none;                /* Remove border */
+    border-radius: 4px;         /* Rounded corners for the button */
+    cursor: pointer;             /* Change cursor on hover */
+}
